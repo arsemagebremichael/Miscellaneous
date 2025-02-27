@@ -1,1 +1,1 @@
-# My repo to exercise
+# My repository to exercise 
