@@ -1,10 +1,28 @@
 fun main() {
+    //Check if number is positive or negative
     println("Enter the value:")
-    var numbers = readln() !!.toInt()
+    var numbers = readln().toInt()
     negativeOrPositive(numbers)
-    evenOrOdd(numbers)
-    checkGrade(numbers)
-    leapyear(numbers)
+
+    //Check if number is odd or even
+    println("Enter the value:")
+    var number1 = readln().toInt()
+    evenOrOdd(number1)
+
+    //Check grades
+    println("Enter your grade:")
+    var grade = readln().toInt()
+    checkGrade(grade)
+
+    //Check for leap year
+    println("What year do you want to check for leap year:")
+    var leapYear = readln().toInt()
+    leapyear(leapYear)
+
+    //Check your discounted price
+    println("Enter the total price:")
+    var discountCheck = readln().toDouble()
+    discountCalculator(discountCheck)
 }
 
 fun negativeOrPositive(num: Int)
@@ -54,5 +72,20 @@ fun leapyear(num: Int) {
     }
     else{
         println("It is not a leap year")
+    }
+}
+fun discountCalculator(price: Double){
+    var discount: Double
+    if (price>=10000){
+         discount = price *0.2
+        println("Payment after discount is:".plus(price-discount) )
+    }
+    else if (price>= 5000){
+        discount = price*0.1
+        println("Payment after discount is:".plus(price-discount) )
+    }
+    else{
+        discount = 0.00
+        println("Payment after discount is:".plus(price-discount) )
     }
 }
