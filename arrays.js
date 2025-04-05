@@ -86,7 +86,3 @@ console.log( `Array that might have duplicates:`, arr);
 console.log("Array with duplicates only:", [...new Set(arrayOfDuplicate)]);
 
 
-let story = "The quick brown fox jumps over the lazy dog";
-let countingThe = story.match(/the/gi).length; 
-let countingBrown = story.match(/brown/g).length;
-console.log(`"the": ${countingThe}, "brown": ${countingBrown}`);
